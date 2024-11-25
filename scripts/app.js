@@ -7,7 +7,7 @@ let resetBtn = document.getElementById("resetBtn");
 
 changeColorBtn.addEventListener('click', function(){
     changeColorFunction();
-   
+    eraseText();
 });
 
 resetBtn.addEventListener('click', function(){
@@ -24,7 +24,7 @@ function changeColorFunction(){
 
 function resetFunction(){
     let boxNumber = userBoxNum.value;
-    for (let i = 1; i <= boxNumber; i++) {
+    for (let i = 1; i <= 9; i++) {
         let changeBox = document.getElementById(`box${i}`);
         if (changeBox) {
           changeBox.style.backgroundColor = "white";
