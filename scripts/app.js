@@ -7,11 +7,12 @@ let resetBtn = document.getElementById("resetBtn");
 
 changeColorBtn.addEventListener('click', function(){
     changeColorFunction();
-    // eraseText();
+   
 });
 
 resetBtn.addEventListener('click', function(){
     resetFunction();
+    eraseText();
 });
 
 function changeColorFunction(){
@@ -31,8 +32,8 @@ function resetFunction(){
       }
 }
 
-// function eraseText() {
-//     document.getElementById("textarea").value = "";
-//     document.getElementById("textarea").value = "";
-// }
+function eraseText() {
+    document.getElementById("userBoxNum").value = "";
+    document.getElementById("userColor").value = "";
+}
 
