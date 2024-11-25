@@ -17,8 +17,14 @@ resetBtn.addEventListener('click', function(){
 
 function changeColorFunction(){
     let boxNumber = userBoxNum.value;
-    let changeBox = document.getElementById(`box${boxNumber}`)
-    changeBox.style.backgroundColor = userColor.value;
+    if(boxNumber >= 1 && boxNumber <=9){
+        let changeBox = document.getElementById(`box${boxNumber}`)
+        changeBox.style.backgroundColor = userColor.value;
+    }
+    else
+    {
+        alert("Invalid Box")
+    }
     
 }
 
